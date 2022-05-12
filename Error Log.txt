@@ -1,0 +1,172 @@
+Error occured at: 25/03/2021 00:55:36:
+The DELETE statement conflicted with the REFERENCE constraint "FK__ActivityS__Activ__5BAD9CC8". The conflict occurred in database "prjdb22", table "dbo.ActivityStudent", column 'ActivityID'.
+The statement has been terminated.
+
+Error occured at: 25/03/2021 00:55:55:
+Something went wrong while deleting an activity
+System.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK__ActivityS__Activ__5BAD9CC8". The conflict occurred in database "prjdb22", table "dbo.ActivityStudent", column 'ActivityID'.
+The statement has been terminated.
+   ב-  System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ב-  System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ב-  System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   ב-  System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   ב-  System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   ב-  System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   ב-  System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   ב-  System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   ב-  System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   ב-  SomerenDAL.BaseDao.ExecuteEditQuery(String query, SqlParameter[] sqlParameters) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\BaseDao.cs:שורה 79
+   ב-  SomerenDAL.ActivityDao.Delete(Activity a) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 54
+   ב-  SomerenLogic.ActivityService.DeleteActivity(Activity a) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 28
+   ב-  SomerenUI.SomerenUI.btnDeleteActivity_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 638
+ClientConnectionId:97720182-6db6-4138-82cf-0ea5aee6e561
+Error Number:547,State:0,Class:16
+
+Error occured at: 25/03/2021 01:34:29:
+Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1400, 40).
+The statement has been terminated.
+
+Error occured at: 25/03/2021 01:46:52:
+Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1400, 40).
+The statement has been terminated.
+
+Error occured at: 25/03/2021 01:52:32:
+Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1400, 40).
+The statement has been terminated.
+
+Error occured at: 25/03/2021 01:56:50:
+Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1400, 40).
+The statement has been terminated.
+
+Error occured at: 25/03/2021 02:02:42:
+Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1400, 40).
+The statement has been terminated.
+
+Error occured at: 25/03/2021 15:23:47:
+Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1850, 40).
+The statement has been terminated.
+
+Error occured at: 25/03/2021 15:46:05:
+Something went wrong while deleting a supervisor
+System.NullReferenceException: ההפניה לאובייקט לא הוגדרה למופע של אובייקט.
+   ב-  SomerenDAL.ActivityDao.DeleteSupervisor(Activity a, Teacher t) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 209
+   ב-  SomerenLogic.ActivityService.DeleteSupervisor(Activity a, Teacher t) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 70
+   ב-  SomerenUI.SomerenUI.btnDeleteSupervisor_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 786
+
+Error occured at: 25/03/2021 16:01:18:
+Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1200, 40).
+The statement has been terminated.
+
+Error occured at: 25/03/2021 16:01:27:
+Something went wrong while adding a supervisor
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1200, 40).
+The statement has been terminated.
+   ב-  System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ב-  System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ב-  System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   ב-  System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   ב-  System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   ב-  System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   ב-  System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   ב-  System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   ב-  System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   ב-  SomerenDAL.BaseDao.ExecuteEditQuery(String query, SqlParameter[] sqlParameters) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\BaseDao.cs:שורה 79
+   ב-  SomerenDAL.ActivityDao.AddSupervisor(Activity a, Teacher t) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 189
+   ב-  SomerenLogic.ActivityService.AddSupervisor(Activity a, Teacher t) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 60
+   ב-  SomerenUI.SomerenUI.btnAddSupervisor_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 749
+ClientConnectionId:37126a0f-7a13-4a2f-8256-80c2b55e8d98
+Error Number:2627,State:1,Class:14
+
+Error occured at: 25/03/2021 16:03:49:
+Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1300, 40).
+The statement has been terminated.
+
+Error occured at: 25/03/2021 16:03:54:
+Something went wrong while adding a supervisor
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Activity__5E27F362AE640C8A'. Cannot insert duplicate key in object 'dbo.ActivitySupervisor'. The duplicate key value is (1300, 40).
+The statement has been terminated.
+   ב-  System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ב-  System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ב-  System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   ב-  System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   ב-  System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   ב-  System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   ב-  System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   ב-  System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   ב-  System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   ב-  SomerenDAL.BaseDao.ExecuteEditQuery(String query, SqlParameter[] sqlParameters) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\BaseDao.cs:שורה 79
+   ב-  SomerenDAL.ActivityDao.AddSupervisor(Activity a, Teacher t) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 189
+   ב-  SomerenLogic.ActivityService.AddSupervisor(Activity a, Teacher t) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 60
+   ב-  SomerenUI.SomerenUI.btnAddSupervisor_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 749
+ClientConnectionId:37c02ae3-8205-41d9-963b-a30cb211bda8
+Error Number:2627,State:1,Class:14
+
+Error occured at: 25/03/2021 17:12:11:
+Something went wrong while adding an activity
+System.Exception: Activity name already exists in the system
+   ב-  SomerenDAL.ActivityDao.Add(Activity a) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 99
+   ב-  SomerenLogic.ActivityService.AddActivity(Activity a) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 37
+   ב-  SomerenUI.SomerenUI.btnAddActivity_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 695
+
+Error occured at: 25/03/2021 17:34:45:
+Invalid column name 'activityName'.
+
+Error occured at: 25/03/2021 17:34:50:
+Something went wrong while adding a supervisor
+System.NullReferenceException: ההפניה לאובייקט לא הוגדרה למופע של אובייקט.
+   ב-  SomerenDAL.ActivityDao.ReadData(DataTable dataTable) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 135
+   ב-  SomerenDAL.ActivityDao.CheckExistingSupervisor(Activity a) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 127
+   ב-  SomerenLogic.ActivityService.CheckExistingSupervisor(Activity a) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 47
+   ב-  SomerenUI.SomerenUI.btnAddSupervisor_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 753
+
+Error occured at: 25/03/2021 17:35:02:
+Invalid column name 'activityName'.
+
+Error occured at: 25/03/2021 17:35:04:
+Something went wrong while adding a supervisor
+System.NullReferenceException: ההפניה לאובייקט לא הוגדרה למופע של אובייקט.
+   ב-  SomerenDAL.ActivityDao.ReadData(DataTable dataTable) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 135
+   ב-  SomerenDAL.ActivityDao.CheckExistingSupervisor(Activity a) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 127
+   ב-  SomerenLogic.ActivityService.CheckExistingSupervisor(Activity a) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 47
+   ב-  SomerenUI.SomerenUI.btnAddSupervisor_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 753
+
+Error occured at: 25/03/2021 18:20:30:
+Violation of PRIMARY KEY constraint 'PK__Activity__369A60060E748C2E'. Cannot insert duplicate key in object 'dbo.ActivityStudent'. The duplicate key value is (147896, 20).
+The statement has been terminated.
+
+Error occured at: 25/03/2021 18:40:18:
+Something went wrong while deleting a participant
+System.NullReferenceException: ההפניה לאובייקט לא הוגדרה למופע של אובייקט.
+   ב-  SomerenDAL.ActivityDao.DeleteParticipant(Activity a, Student s) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 248
+   ב-  SomerenLogic.ActivityService.DeleteParticipant(Activity a, Student s) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 94
+   ב-  SomerenUI.SomerenUI.btnDeleteStudent_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 875
+
+Error occured at: 25/03/2021 18:44:00:
+Something went wrong while deleting a participant
+System.NullReferenceException: ההפניה לאובייקט לא הוגדרה למופע של אובייקט.
+   ב-  SomerenDAL.ActivityDao.DeleteParticipant(Activity a, Student s) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 248
+   ב-  SomerenLogic.ActivityService.DeleteParticipant(Activity a, Student s) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 94
+   ב-  SomerenUI.SomerenUI.btnDeleteStudent_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 875
+
+Error occured at: 25/03/2021 18:44:20:
+Something went wrong while deleting a participant
+System.NullReferenceException: ההפניה לאובייקט לא הוגדרה למופע של אובייקט.
+   ב-  SomerenDAL.ActivityDao.DeleteParticipant(Activity a, Student s) ב- C:\Users\adir7\Desktop\Someren-master\SomerenDAL\ActivityDao.cs:שורה 248
+   ב-  SomerenLogic.ActivityService.DeleteParticipant(Activity a, Student s) ב- C:\Users\adir7\Desktop\Someren-master\SomerenLogic\ActivityService.cs:שורה 94
+   ב-  SomerenUI.SomerenUI.btnDeleteStudent_Click(Object sender, EventArgs e) ב- C:\Users\adir7\Desktop\Someren-master\SomerenUI\SomerenUI.cs:שורה 875
+
+Error occured at: 3/29/2021 00:04:08:
+Something went wrong while adding a supervisor
+System.ArgumentOutOfRangeException: InvalidArgument=Value of '0' is not valid for 'index'.
+Parameter name: index
+   at System.Windows.Forms.ListView.SelectedListViewItemCollection.get_Item(Int32 index)
+   at SomerenUI.SomerenUI.btnAddSupervisor_Click(Object sender, EventArgs e) in C:\Users\khean\Videos\Someren-master\SomerenUI\SomerenUI.cs:line 803
+
+Error occured at: 3/29/2021 00:22:25:
+Something went wrong while loading the teahcers
+System.InvalidCastException: Specified cast is not valid.
+   at SomerenDAL.BaseDao.ReadCountData2(DataTable dataTable) in C:\Users\khean\Videos\Someren-master\SomerenDAL\BaseDao.cs:line 135
+   at SomerenDAL.TeacherDao.RemainsSupervisor2(Teacher t) in C:\Users\khean\Videos\Someren-master\SomerenDAL\TeacherDao.cs:line 81
+   at SomerenLogic.TeacherService.RemainsSupervisor2(Teacher t) in C:\Users\khean\Videos\Someren-master\SomerenLogic\TeacherService.cs:line 39
+   at SomerenUI.SomerenUI.ShowLecturersSupervisionList(List`1 teachers, ListView list) in C:\Users\khean\Videos\Someren-master\SomerenUI\SomerenUI.cs:line 260
+
